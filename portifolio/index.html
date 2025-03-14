@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfólio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre" title="Sobre">
+                            <i class="fas fa-user"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos" title="Projetos">
+                            <i class="fas fa-folder"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/RikelmyZuza" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="btn-tema" class="btn btn-link nav-link" title="Mudar Tema">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Nome na horizontal -->
+    <header class="nome-horizontal text-center py-5">
+        <h1>Portfólio</h1>
+        <p class="lead">Desenvolvimento Web | Soluções Digitais</p>
+    </header>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Texto do Sobre Mim -->
+                <div class="col-md-6">
+                    <h2 class="mb-4">Sobre Mim</h2>
+                    <p>
+                        Olá! Sou um desenvolvedor web apaixonado por criar soluções digitais incríveis.
+                        Tenho experiência em desenvolvimento front-end e back-end, com foco em tecnologias modernas e eficientes.
+                        Sempre busco aprender novas ferramentas e metodologias para melhorar minhas habilidades e entregar
+                        projetos de alta qualidade.
+                    </p>
+                    <p>
+                        Além do desenvolvimento web, também tenho interesse em automação de processos e análise de dados.
+                        Acredito que a tecnologia pode transformar ideias em realidade e estou sempre em busca de novos
+                        desafios para expandir meus conhecimentos.
+                    </p>
+                </div>
+                <!-- Competências -->
+                <div class="col-md-6">
+                    <h3 class="mb-4 text-center">Competências</h3>
+                    <div class="row">
+                        <div class="col-4 text-center mb-4">
+                            <i class="fab fa-html5 fs-1" title="HTML"></i>
+                            <p>HTML</p>
+                        </div>
+                        <div class="col-4 text-center mb-4">
+                            <i class="fab fa-css3-alt fs-1" title="CSS"></i>
+                            <p>CSS</p>
+                        </div>
+                        <div class="col-4 text-center mb-4">
+                            <i class="fab fa-js-square fs-1" title="JavaScript"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="col-4 text-center mb-4">
+                            <i class="fas fa-database fs-1" title="MySQL"></i>
+                            <p>MySQL</p>
+                        </div>
+                        <div class="col-4 text-center mb-4">
+                            <i class="fab fa-node-js fs-1" title="Node.js"></i>
+                            <p>Node.js</p>
+                        </div>
+                        <div class="col-4 text-center mb-4">
+                            <i class="fab fa-github fs-1" title="GitHub"></i>
+                            <p>GitHub</p>
+                        </div>
+                        <div class="col-4 text-center mb-4">
+                            <i class="fab fa-python fs-1" title="Python"></i>
+                            <p>Python</p>
+                        </div>
+                        <div class="col-4 text-center mb-4">
+                            <i class="fab fa-figma fs-1" title="Figma"></i>
+                            <p>Figma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- Seção Projetos -->
+<section id="projetos" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Projetos</h2>
+        <div class="row">
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-4">
+                <div class="card card-projeto h-100">
+                    <!-- Imagem do Projeto -->
+                    <a href="https://www.link-do-projeto-1.com" target="_blank">
+                        <img src="img/Senac.png" class="card-img-top img-projeto" alt="Projeto 1">
+                    </a>
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">Corrida Senac</h3>
+                        <p class="card-text flex-grow-1"></p>
+                        <!-- Botão "Ver Site" -->
+                        <a href="https://www.link-do-projeto-1.com" target="_blank" class="btn btn-primary mt-auto">
+                            Ver Site
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-4">
+                <div class="card card-projeto h-100">
+                    <!-- Imagem do Projeto -->
+                    <a href="https://www.link-do-projeto-2.com" target="_blank">
+                        <img src="img/Tenis.jpeg" class="card-img-top img-projeto" alt="Projeto 2">
+                    </a>
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">Outlet Steet</h3>
+                        <p class="card-text flex-grow-1"></p>
+                        <!-- Botão "Ver Site" -->
+                        <a href="https://www.link-do-projeto-2.com" target="_blank" class="btn btn-primary mt-auto">
+                            Ver Site
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-4">
+                <div class="card card-projeto h-100">
+                    <!-- Imagem do Projeto -->
+                    <a href="https://www.link-do-projeto-3.com" target="_blank">
+                        <img src="img/Mulher.jpeg" class="card-img-top img-projeto" alt="Projeto 3">
+                    </a>
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title">Clinica Feminina</h3>
+                        <p class="card-text flex-grow-1"></p>
+                        <!-- Botão "Ver Site" -->
+                        <a href="https://www.link-do-projeto-3.com" target="_blank" class="btn btn-primary mt-auto">
+                            Ver Site
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2023 Portfólio. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="https://github.com/RikelmyZuza" target="_blank" class="text-decoration-none me-3">
+                        <i class="fab fa-github fs-4"></i>
+                    </a>
+                    <a href="#" class="text-decoration-none me-3">
+                        <i class="fab fa-linkedin fs-4"></i>
+                    </a>
+                    <a href="mailto:rikelmyzuza.dev@gmail.com" class="text-decoration-none">
+                        <i class="fas fa-envelope fs-4"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão "Voltar ao Topo" -->
+    <button id="btn-topo" class="btn btn-light" title="Voltar ao Topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
