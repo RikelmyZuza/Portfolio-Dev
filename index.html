@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Rikelmy</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-theme">
+    <!-- Menu Compacto -->
+    <div class="menu-compacto">
+        <button id="menu-btn" class="btn btn-link" title="Menu" aria-label="Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div id="menu-expandido" class="menu-expandido">
+            <a href="#sobre" title="Sobre" aria-label="Sobre">
+                <i class="fas fa-user"></i>
+            </a>
+            <a href="#projetos" title="Projetos" aria-label="Projetos">
+                <i class="fas fa-folder"></i>
+            </a>
+            <a href="#contato" title="Contato" aria-label="Contato">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <button id="btn-tema" class="btn btn-link" title="Mudar Tema" aria-label="Mudar Tema">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Nome na horizontal -->
+    <header class="nome-horizontal py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Título e imagem lado a lado -->
+                <div class="col-md-6 text-center">
+                    <h1 id="titulo-digitado"></h1>
+                    <p id="subtitulo-digitado" class="lead"></p>
+                </div>
+                <!-- Foto ao lado do título -->
+                <div class="col-md-6 text-center">
+                    <div class="moldura-foto">
+                        <img src="img/foto-perfil.jpg" alt="Foto de Rikelmy" class="foto-perfil">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Texto do Sobre Mim -->
+                <div class="col-12">
+                    <h2 class="mb-4 text-center">Sobre Mim</h2>
+                    <p class="sobre-texto">
+                        Olá! Sou um desenvolvedor web apaixonado por criar soluções digitais incríveis.
+                        Tenho experiência em desenvolvimento front-end e back-end, com foco em tecnologias modernas e eficientes.
+                        Sempre busco aprender novas ferramentas e metodologias para melhorar minhas habilidades e entregar
+                        projetos de alta qualidade.
+                    </p>
+                    <p class="sobre-texto">
+                        Além do desenvolvimento web, também tenho interesse em automação de processos e análise de dados.
+                        Acredito que a tecnologia pode transformar ideias em realidade e estou sempre em busca de novos
+                        desafios para expandir meus conhecimentos.
+                    </p>
+                </div>
+            </div>
+            <!-- Competências -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h3 class="mb-4 text-center">Competências</h3>
+                    <div class="row justify-content-center"> <!-- Centraliza as competências -->
+                        <div class="col-4 text-center mb-4">
+                            <i class="fab fa-html5 fs-1 text-purple" title="HTML"></i>
+                            <p>HTML</p>
+                        </div>
+                        <div class="col-4 text-center mb-4">
+                            <i class="fab fa-css3-alt fs-1 text-purple" title="CSS"></i>
+                            <p>CSS</p>
+                        </div>
+                        <div class="col-4 text-center mb-4">
+                            <i class="fab fa-js-square fs-1 text-purple" title="JavaScript"></i>
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="col-4 text-center mb-4">
+                            <i class="fas fa-database fs-1 text-purple" title="MySQL"></i>
+                            <p>MySQL</p>
+                        </div>
+                        <div class="col-4 text-center mb-4">
+                            <i class="fab fa-node-js fs-1 text-purple" title="Node.js"></i>
+                            <p>Node.js</p>
+                        </div>
+                        <div class="col-4 text-center mb-4">
+                            <i class="fab fa-github fs-1 text-purple" title="GitHub"></i>
+                            <p>GitHub</p>
+                        </div>
+                        <div class="col-4 text-center mb-4">
+                            <i class="fab fa-python fs-1 text-purple" title="Python"></i>
+                            <p>Python</p>
+                        </div>
+                        <div class="col-4 text-center mb-4">
+                            <i class="fab fa-figma fs-1 text-purple" title="Figma"></i>
+                            <p>Figma</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Projetos</h2>
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card card-projeto h-100">
+                        <a href="https://www.link-do-projeto-1.com" target="_blank" aria-label="Projeto 1">
+                            <img src="img/Senac.png" class="card-img-top img-projeto" alt="Projeto 1">
+                        </a>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Corrida Senac</h3>
+                            <p class="card-text flex-grow-1"></p>
+                            <a href="https://www.link-do-projeto-1.com" target="_blank" class="btn btn-primary mt-auto" aria-label="Ver Site">
+                                Ver Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card card-projeto h-100">
+                        <a href="https://www.link-do-projeto-2.com" target="_blank" aria-label="Projeto 2">
+                            <img src="img/Tenis.jpeg" class="card-img-top img-projeto" alt="Projeto 2">
+                        </a>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Outlet Steet</h3>
+                            <p class="card-text flex-grow-1"></p>
+                            <a href="https://www.link-do-projeto-2.com" target="_blank" class="btn btn-primary mt-auto" aria-label="Ver Site">
+                                Ver Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card card-projeto h-100">
+                        <a href="https://rikelmyzuza.github.io/Clinica_front/" target="_blank" aria-label="Projeto 3">
+                            <img src="img/Mulher.jpeg" class="card-img-top img-projeto" alt="Projeto 3">
+                        </a>
+                        <div class="card-body d-flex flex-column">
+                            <h3 class="card-title">Clinica Feminina</h3>
+                            <p class="card-text flex-grow-1"></p>
+                            <a href="https://rikelmyzuza.github.io/Clinica_front/" target="_blank" class="btn btn-primary mt-auto" aria-label="Ver Site">
+                                Ver Site
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contato" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contato</h2>
+            <div class="row">
+                <div class="col-12 text-center">
+                    <a href="https://www.linkedin.com/in/seu-linkedin" target="_blank" class="btn btn-link mx-3" title="LinkedIn" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin fs-1 text-purple"></i>
+                    </a>
+                    <a href="https://wa.me/seu-numero-de-whatsapp" target="_blank" class="btn btn-link mx-3" title="WhatsApp" aria-label="WhatsApp">
+                        <i class="fab fa-whatsapp fs-1 text-purple"></i>
+                    </a>
+                    <a href="https://github.com/RikelmyZuza" target="_blank" class="btn btn-link mx-3" title="GitHub" aria-label="GitHub">
+                        <i class="fab fa-github fs-1 text-purple"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p class="mb-0">&copy; 2023 Portfólio. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Botão "Voltar ao Topo" -->
+    <button id="btn-topo" class="btn btn-light" title="Voltar ao Topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS e dependências -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" async></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" async></script>
+    <script src="script.js" async></script>
+</body>
+</html>

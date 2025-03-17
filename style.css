@@ -1,0 +1,306 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+    background-image: url('wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body.dark-theme {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    background-image: url('wallpaper-dark.jpg');
+}
+
+/* Menu Compacto */
+.menu-compacto {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#menu-btn {
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #BA55D3; /* Cor roxa */
+    border-radius: 50%;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#menu-btn:hover {
+    background-color: #9932CC; /* Roxo mais escuro no hover */
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-expandido {
+    display: none;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+    padding: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-expandido a, .menu-expandido button {
+    color: #ffffff;
+    margin: 10px 0;
+    font-size: 20px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.menu-expandido a:hover, .menu-expandido button:hover {
+    color: #BA55D3;
+    transform: scale(1.1);
+}
+
+.menu-expandido.ativo {
+    display: flex;
+}
+
+/* Estilo para o cabeçalho */
+.nome-horizontal {
+    background-color: transparent;
+    padding: 150px 0;
+}
+
+.nome-horizontal h1 {
+    font-size: 4rem;
+    color: #000000;
+    text-align: center;
+}
+
+body.dark-theme .nome-horizontal h1 {
+    color: #ffffff;
+}
+
+.nome-horizontal .lead {
+    font-size: 1.5rem;
+    color: #666666;
+    text-align: center;
+}
+
+body.dark-theme .nome-horizontal .lead {
+    color: #cccccc;
+}
+
+/* Moldura e foto */
+.moldura-foto {
+    border: 5px solid #BA55D3;
+    border-radius: 15px;
+    padding: 5px;
+    display: inline-block;
+    background-color: #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.foto-perfil {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Texto "Sobre Mim" */
+.sobre-texto {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* Seções */
+section {
+    padding: 100px 0;
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+body.dark-theme section {
+    background-color: rgba(26, 26, 26, 0.9);
+}
+
+/* Cards de Projetos */
+.card {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%; /* Garante que todos os cards tenham a mesma altura */
+    display: flex;
+    flex-direction: column;
+}
+
+body.dark-theme .card {
+    background-color: #2c3e50;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-projeto {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%; /* Garante que todos os cards tenham a mesma altura */
+    display: flex;
+    flex-direction: column;
+}
+
+body.dark-theme .card-projeto {
+    background-color: #2c3e50;
+    color: #ffffff;
+    border: 1px solid #444444;
+}
+
+.card-projeto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    flex: 1; /* Faz o corpo do card ocupar o espaço restante */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Alinha o conteúdo verticalmente */
+}
+
+.card-img-top {
+    height: 200px; /* Altura fixa para as imagens dos cards */
+    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+}
+
+/* Botão "Voltar ao Topo" */
+#btn-topo {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 20px;
+    background-color: #000000; /* Fundo preto */
+    color: #ffffff; /* Texto branco */
+}
+
+#btn-topo:hover {
+    background-color: #9932CC;
+    transform: scale(1.1);
+}
+
+body.dark-theme #btn-topo {
+    background-color: #BA55D3;
+    color: #ffffff;
+}
+
+/* Seção Competências */
+.competencia {
+    text-align: center;
+    margin: 10px;
+}
+
+.competencia i {
+    color: #000000; /* Ícones pretos */
+    transition: color 0.3s;
+}
+
+body.dark-theme .competencia i {
+    color: #ffffff; /* Ícones brancos no tema escuro */
+}
+
+.competencia i:hover {
+    color: #BA55D3; /* Roxo claro ao passar o mouse */
+}
+
+.competencia p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Efeito de Entrada da Esquerda para a Direita */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slide-in-left {
+    animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+/* Seção de Contato */
+#contato .btn-link {
+    color: #BA55D3; /* Cor roxa */
+    transition: color 0.3s, transform 0.3s;
+}
+
+#contato .btn-link:hover {
+    color: #9932CC; /* Roxo mais escuro no hover */
+    transform: scale(1.1);
+}
+
+body.dark-theme #contato .btn-link {
+    color: #BA55D3; /* Mantém a cor roxa no tema escuro */
+}
+
+body.dark-theme #contato .btn-link:hover {
+    color: #9932CC; /* Mantém a cor roxa mais escura no hover */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nome-horizontal h1 {
+        font-size: 2.5rem;
+    }
+
+    .nome-horizontal .lead {
+        font-size: 1.2rem;
+    }
+
+    .moldura-foto {
+        margin-top: 20px;
+    }
+
+    #menu-btn {
+        font-size: 20px;
+        padding: 10px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu-expandido {
+        top: 60px;
+    }
+}
